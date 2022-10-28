@@ -1,11 +1,24 @@
 # photoredact
 
-A new Flutter module project.
+Приложение для редактирования фото
 
-## Getting Started
+## Прототип
 
-For help getting started with Flutter development, view the online
-[documentation](https://flutter.dev/).
-
-For instructions integrating Flutter modules to your existing applications,
-see the [add-to-app documentation](https://flutter.dev/docs/development/add-to-app).
+В данном приложении используются следующие библиотеки
+ flutter_bloc
+  image_picker
+  hive
+  image
+  equatable
+  hive_generator
+  build_runner
+  hive_flutter
+  image_editor
+  extended_image
+  
+  В данном приложении для обработки изображения (масштаб, поворот и т.п. будет успользоваться 2 библиотеки image_editor  extended_image )
+ Для создания фильтров использовалась внутренние виджеты такие как (ColorFiltered)
+ Навигация осуществляется обычным переходом Navigator.of<...>(context).. не используя каких либо маршрутов типа AutoRoute т.к. приложение не особо нагружено, но подготовлена база к переходу на данный маршрутизатор.
+ Для локальной базы используется библиотека Hive в ней сохраняются данные фоторафии ввиде формата File а так же id Предполагается постройка истории спомощью локальной базы данных. Так как весьма просто отрисовать элементы массива.
+ 
+ Длагодарю вас за предоставленное задание, работа будет доделана до конца вне зависимости от результата, так как проект является довольно увлекательным.
